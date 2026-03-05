@@ -1,0 +1,135 @@
+---
+pagetitle: "Experience | George Barahona"
+page-layout: custom
+---
+
+```{=html}
+<div class="section">
+  <div class="container">
+    <div class="section-title">Career Journey</div>
+    <h1>Professional Experience</h1>
+    <div class="timeline">
+
+  <div class="timeline-item">
+    <div class="card">
+      <div class="card-header">
+        <div>
+          <h3>Membership Coordinator</h3>
+          <h4 class="card-subtitle">Specialty Equipment Market Association (SEMA)</h4>
+          <div class="card-location">
+            <i data-lucide="map-pin" style="width:14px;height:14px;"></i>
+            Diamond Bar, California
+          </div>
+        </div>
+        <div class="card-meta">Aug 2024 – Present</div>
+      </div>
+      <div class="card-body">
+        <ul>
+          <li>Strategized and executed multichannel marketing strategies across social media, web, and emails to raise membership awareness, engagement and conversions</li>
+          <li>Represented the organization at the SEMA Show to recruit nonmember companies and benefit partners, while expanding membership awareness and engagement leading to new members</li>
+          <li>Built and maintained analytic dashboards for leadership utilizing our CRM, Meta Ads Manager, and member benefit portal, enabling performance tracking and data driven decision making</li>
+        </ul>
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-highlight">PowerBI</span>
+        <span class="tag">Meta Ads Manager</span>
+        <span class="tag">CRM Analytics</span>
+        <span class="tag">Event Marketing</span>
+        <span class="tag">B2B</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="card">
+      <div class="card-header">
+        <div>
+          <h3>Marketing &amp; Leasing Coordinator</h3>
+          <h4 class="card-subtitle">Asset Living</h4>
+          <div class="card-location">
+            <i data-lucide="map-pin" style="width:14px;height:14px;"></i>
+            Pomona, California
+          </div>
+        </div>
+        <div class="card-meta">Oct 2023 – Aug 2024</div>
+      </div>
+      <div class="card-body">
+        <ul>
+          <li>Contributed to student housing property, The Current, <strong>100% occupancy within 10 months</strong> through multichannel marketing and campus outreach</li>
+          <li>Developed and executed social media strategies such as giveaways, discounted rates, and on campus outreach events to establish brand awareness, engagement, and leads</li>
+          <li>Optimized Meta Ads Manager analytics to adjust social media strategy and posting schedules, leading to improved engagement and followers</li>
+          <li>Interacted with leads through SMS, email and Instagram to direct prospects to their incomplete applications and answering questions they have, improving conversion rates</li>
+        </ul>
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-highlight">Meta Ads</span>
+        <span class="tag">Student Housing</span>
+        <span class="tag">Lead Conversion</span>
+        <span class="tag">Social Strategy</span>
+        <span class="tag">SMS Marketing</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="card">
+      <div class="card-header">
+        <div>
+          <h3>Learning &amp; Development Technical Associate</h3>
+          <h4 class="card-subtitle">Panda Restaurant Group</h4>
+          <div class="card-location">
+            <i data-lucide="map-pin" style="width:14px;height:14px;"></i>
+            Rosemead, California
+          </div>
+        </div>
+        <div class="card-meta">May 2022 – Jun 2023</div>
+      </div>
+      <div class="card-body">
+        <ul>
+          <li>Maintained LMS, University of Panda from Cornerstone OnDemand, ensuring local &amp; federal compliance materials and training for all organization associates was accurate and up to date</li>
+          <li>Committed to community engagement within University of Panda by facilitating discussions and fostering an online environment aligned with the organization's core values</li>
+          <li>Delivered technical support to operations teams during weekends &amp; early morning hours, utilizing ServiceNow &amp; Outlook</li>
+        </ul>
+      </div>
+      <div class="card-tags">
+        <span class="tag">Cornerstone LMS</span>
+        <span class="tag">ServiceNow</span>
+        <span class="tag">Compliance</span>
+        <span class="tag">Technical Support</span>
+        <span class="tag">Training</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="card">
+      <div class="card-header">
+        <div>
+          <h3>Shift Leader</h3>
+          <h4 class="card-subtitle">Chick-fil-A</h4>
+          <div class="card-location">
+            <i data-lucide="map-pin" style="width:14px;height:14px;"></i>
+            Arcadia, California
+          </div>
+        </div>
+        <div class="card-meta">Jan 2021 – Jan 2022</div>
+      </div>
+      <div class="card-body">
+        <ul>
+          <li>Handled cash handling procedures through end of business day</li>
+          <li>Created handbooks for cash handling procedures, onboarding, and store trainings</li>
+          <li>Oversaw vault, store closure, and final store walk through to ensure cleanliness</li>
+          <li>Fostered and tracked employees development and made appropriate adjustments to their training</li>
+        </ul>
+      </div>
+      <div class="card-tags">
+        <span class="tag">Leadership</span>
+        <span class="tag">Training Development</span>
+        <span class="tag">Operations</span>
+        <span class="tag">Cash Management</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+```

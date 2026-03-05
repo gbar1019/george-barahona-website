@@ -1,0 +1,79 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "George Barahona"
+  site-url: https://georgeab.com
+  description: "Marketing Technologist & Data Analyst | PowerBI | RStudio | AI Automation"
+  favicon: favicon.ico
+  search: false
+  
+  navbar:
+    background: "#0A0A0A"
+    foreground: "#FFFFFF"
+    pinned: true
+    collapse-below: lg
+    
+    left:
+      - href: index.qmd
+        text: About
+      - href: experience.qmd
+        text: Experience
+      - href: achievements.qmd
+        text: Achievements
+      - href: projects.qmd
+        text: Projects
+      - href: skills.qmd
+        text: Skills
+      - href: passions.qmd
+        text: Passions
+      - href: blog.qmd
+        text: Blog
+      - href: contact.qmd
+        text: Contact
+    
+    right:
+      - icon: linkedin
+        aria-label: LinkedIn
+        href: https://linkedin.com/in/georgebarahona
+        target: _blank
+      - icon: envelope
+        aria-label: Email
+        href: mailto:gbarahona1019@gmail.com
+      - text: "Resume"
+        href: assets/George_Barahona_Resume.pdf
+        target: _blank
+
+  page-footer:
+    background: "#0A0A0A"
+    foreground: "#737373"
+    border: true
+    left: "© 2025 George Barahona. Built with RStudio + Quarto."
+    right:
+      - icon: linkedin
+        href: https://linkedin.com/in/georgebarahona
+      - icon: envelope
+        href: mailto:gbarahona1019@gmail.com
+
+format:
+  html:
+    theme:
+      - cosmo
+      - styles/custom.scss
+    toc: false
+    page-layout: custom
+    grid:
+      body-width: 1200px
+    include-in-header:
+      text: |
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/lucide@latest"></script>
+    include-after-body:
+      text: |
+        <script src="js/animations.js"></script>
+
+execute:
+  freeze: auto

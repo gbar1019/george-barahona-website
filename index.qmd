@@ -1,0 +1,73 @@
+---
+pagetitle: "George Barahona"
+page-layout: custom
+---
+
+```{=html}
+<div class="hero">
+  <div class="hero-content hero-two-col">
+    <div class="hero-text">
+      <div class="hero-greeting">Hi, I'm</div>
+      <h1 class="hero-name">George Barahona</h1>
+      <div class="hero-title">Marketing Technologist &amp; Data Analyst</div>
+      <div class="hero-description">
+        With 5 years of combined experience in marketing, data analytics, sales conversion and brand growth. I leverage AI tools to optimize productivity, performance and growth without compromising data privacy. Proficient in <strong>PowerBI &amp; RStudio</strong> for transforming data into interactive visualizations for leadership, allowing data driven decisions.
+      </div>
+      <div class="hero-cta">
+        <a href="experience.html" class="btn btn-primary">View My Work</a>
+        <a href="assets/George_Barahona_Resume.pdf" class="btn btn-secondary" target="_blank">Download Resume</a>
+      </div>
+    </div>
+    <div class="hero-headshot">
+      <img src="images/headshot.jpg" alt="George Barahona headshot" class="headshot-img" />
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    Scroll
+    <i data-lucide="chevron-down" class="scroll-arrow"></i>
+  </div>
+</div>
+
+<div class="section">
+  <div class="container">
+    <div class="section-title">About Me</div>
+    <h2>Bridging Data, Technology &amp; Marketing</h2>
+    <p style="margin-top: 1.5rem; max-width: 800px;">
+      I'm a marketing professional based in <strong>West Covina, CA</strong>, specializing in the intersection of data analytics, marketing automation, and brand growth. My approach combines technical proficiency with strategic thinking to deliver measurable results.
+    </p>
+    <h3 style="margin-top: 2.5rem; margin-bottom: 1.5rem;">What I Do</h3>
+    <div class="about-grid">
+      <div class="about-card">
+        <div class="about-card-icon"><i data-lucide="bar-chart-2"></i></div>
+        <h4>Data Visualization</h4>
+        <p>Building interactive PowerBI dashboards that transform complex data into actionable insights</p>
+      </div>
+      <div class="about-card">
+        <div class="about-card-icon"><i data-lucide="megaphone"></i></div>
+        <h4>Marketing Operations</h4>
+        <p>Executing multichannel strategies across social media, web, and email</p>
+      </div>
+      <div class="about-card">
+        <div class="about-card-icon"><i data-lucide="bot"></i></div>
+        <h4>AI Integration</h4>
+        <p>Leveraging AI tools for workflow automation, lead generation, and performance optimization</p>
+      </div>
+      <div class="about-card">
+        <div class="about-card-icon"><i data-lucide="rocket"></i></div>
+        <h4>Brand Development</h4>
+        <p>Creating engagement programs that drive awareness, conversion, and community building</p>
+      </div>
+    </div>
+    <div class="contact-links" style="margin-top: 3rem;">
+      <a href="mailto:gbarahona1019@gmail.com" class="contact-link">
+        <i data-lucide="mail"></i>
+        gbarahona1019@gmail.com
+      </a>
+      <a href="https://linkedin.com/in/georgebarahona" class="contact-link" target="_blank">
+        <i data-lucide="linkedin"></i>
+        LinkedIn
+      </a>
+    </div>
+  </div>
+</div>
+```

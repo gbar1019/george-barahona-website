@@ -1,0 +1,52 @@
+---
+title: "R Analysis Template"
+description: "A reusable R project template for data analysis workflows with RStudio and Quarto."
+date: "2025-01-01"
+categories: [r, data-analysis, template]
+image: "../images/project-r-template.jpg"
+---
+
+```{=html}
+<div class="section">
+  <div class="container" style="max-width: 800px;">
+
+    <a href="../projects.html" class="btn btn-secondary" style="margin-bottom: 2rem;">
+      <i data-lucide="arrow-left" style="width:16px;height:16px;"></i> Back to Projects
+    </a>
+
+    <h1>R Analysis Template</h1>
+    <div class="card-subtitle" style="margin-bottom: 2rem;">Data Analysis · RStudio + Quarto</div>
+
+    <h2>Problem</h2>
+    <p>
+      <!-- TODO: Describe the problem this project solves -->
+      Describe the business problem or analytical question this project addresses.
+    </p>
+
+    <h2 style="margin-top: 2rem;">Approach</h2>
+    <p>
+      <!-- TODO: Describe your approach -->
+      Outline the methodology, tools, and techniques used.
+    </p>
+
+    <!-- TODO: Replace with actual R code output -->
+    <div style="background: #111; border: 1px dashed rgba(0,212,170,0.3); border-radius: 12px; padding: 3rem; text-align: center; margin: 2rem 0; color: #737373;">
+      <i data-lucide="code-2" style="width:48px;height:48px;margin-bottom:1rem;"></i>
+      <p>R code output or visualization placeholder</p>
+    </div>
+
+    <h2 style="margin-top: 2rem;">Results</h2>
+    <p>
+      <!-- TODO: Add results and metrics -->
+      Summarize the key findings, metrics, and business impact.
+    </p>
+
+    <div style="margin-top: 2.5rem;">
+      <a href="https://github.com/YOUR_USERNAME/r-analysis-template" class="btn btn-primary" target="_blank">
+        <i data-lucide="github" style="width:16px;height:16px;"></i> View on GitHub
+      </a>
+    </div>
+
+  </div>
+</div>
+```

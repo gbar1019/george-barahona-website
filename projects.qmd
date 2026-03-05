@@ -1,0 +1,23 @@
+---
+pagetitle: "Projects | George Barahona"
+listing:
+  contents: projects
+  type: grid
+  grid-columns: 2
+  sort: "date desc"
+  categories: true
+  fields: [image, title, description, categories]
+page-layout: custom
+---
+
+```{=html}
+<div class="section">
+  <div class="container">
+    <div class="section-title">Portfolio</div>
+    <h1>Projects</h1>
+    <p style="margin-top: 1rem; margin-bottom: 2rem; max-width: 700px;">
+      A selection of projects where I've applied data analytics, AI tools, and marketing technology to solve real business problems.
+    </p>
+  </div>
+</div>
+```

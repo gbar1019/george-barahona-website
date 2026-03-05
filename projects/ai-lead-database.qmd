@@ -1,0 +1,50 @@
+---
+title: "AI Lead Database"
+description: "Built an AI-powered database of influencers, car clubs, and nonmember companies to expand SEMA's marketing outreach efforts."
+date: "2024-12-01"
+categories: [ai-tools, lead-generation, marketing]
+image: "../images/project-ai-lead-db.jpg"
+---
+
+```{=html}
+<div class="section">
+  <div class="container" style="max-width: 800px;">
+
+    <a href="../projects.html" class="btn btn-secondary" style="margin-bottom: 2rem;">
+      <i data-lucide="arrow-left" style="width:16px;height:16px;"></i> Back to Projects
+    </a>
+
+    <h1>AI Lead Database</h1>
+    <div class="card-subtitle" style="margin-bottom: 2rem;">AI-Powered Prospecting · SEMA</div>
+
+    <h2>Problem</h2>
+    <p>
+      SEMA's marketing outreach was limited to existing contact lists, missing a large pool of potential members, influencers, and car clubs in the automotive aftermarket industry. Manually researching and compiling leads was time-consuming and not scalable.
+    </p>
+
+    <h2 style="margin-top: 2rem;">Approach</h2>
+    <p>
+      Leveraged AI tools to systematically identify and compile a database of prospective contacts including automotive influencers, car clubs, and nonmember companies. The process involved prompt engineering, data cleaning, and integration into existing CRM workflows for targeted outreach campaigns.
+    </p>
+
+    <!-- TODO: Replace with actual screenshot or R/Python output -->
+    <div style="background: #111; border: 1px dashed rgba(0,212,170,0.3); border-radius: 12px; padding: 3rem; text-align: center; margin: 2rem 0; color: #737373;">
+      <i data-lucide="image" style="width:48px;height:48px;margin-bottom:1rem;"></i>
+      <p>Project screenshot or data visualization placeholder</p>
+    </div>
+
+    <!-- TODO: add metric -->
+    <h2 style="margin-top: 2rem;">Results</h2>
+    <p>
+      Built a database of <strong>[X] contacts</strong>, expanding outreach capacity by <strong>[X]%</strong>. The system is now used as the foundation for all prospecting campaigns.
+    </p>
+
+    <div style="margin-top: 2.5rem;">
+      <a href="https://github.com/YOUR_USERNAME/ai-lead-database" class="btn btn-primary" target="_blank">
+        <i data-lucide="github" style="width:16px;height:16px;"></i> View on GitHub
+      </a>
+    </div>
+
+  </div>
+</div>
+```

@@ -1,0 +1,23 @@
+---
+pagetitle: "Blog | George Barahona"
+listing:
+  contents: posts
+  type: default
+  sort: "date desc"
+  categories: true
+  fields: [title, date, description, categories]
+  date-format: "MMM D, YYYY"
+page-layout: custom
+---
+
+```{=html}
+<div class="section">
+  <div class="container">
+    <div class="section-title">Writing &amp; Videos</div>
+    <h1>Blog</h1>
+    <p style="margin-top: 1rem; margin-bottom: 2rem; max-width: 700px;">
+      Vibe coding sessions, technique walkthroughs, and thoughts on marketing technology and AI workflows.
+    </p>
+  </div>
+</div>
+```

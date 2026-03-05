@@ -1,0 +1,38 @@
+---
+pagetitle: "Passions | George Barahona"
+page-layout: custom
+---
+
+```{=html}
+<div class="section">
+  <div class="container">
+
+    <div class="section-title">Beyond the Resume</div>
+
+    <h1>What Drives Me</h1>
+
+    <div class="passion-card">
+      <div class="passion-icon">
+        <i data-lucide="code-2"></i>
+      </div>
+      <h2>Vibe Coding</h2>
+      <p>I thrive when learning by doing, creating applications and websites that make a difference in both my personal and professional work.</p>
+      <div class="passion-description">
+        This portfolio itself is an example—built with <strong>RStudio and Quarto</strong> to showcase the intersection of my technical skills and marketing background. I believe in learning through creation, whether that's automating a workflow, building a dashboard, or developing a new skill through hands-on projects.
+      </div>
+    </div>
+
+    <div class="passion-card">
+      <div class="passion-icon">
+        <i data-lucide="zap"></i>
+      </div>
+      <h2>Automations</h2>
+      <p>I'm passionate about efficiency and automation, always exploring new ways to eliminate repetitive tasks and reclaim time for more meaningful work.</p>
+      <div class="passion-description">
+        From AI-powered lead generation to automated reporting workflows, I constantly seek opportunities to leverage technology for productivity gains. My approach: <strong>automate the mundane, focus on the meaningful</strong>.
+      </div>
+    </div>
+
+  </div>
+</div>
+```

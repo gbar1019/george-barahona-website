@@ -1,0 +1,41 @@
+---
+pagetitle: "Contact | George Barahona"
+page-layout: custom
+---
+
+```{=html}
+<div class="contact-section">
+  <div class="container">
+
+    <div class="section-title" style="justify-content: center;">Get In Touch</div>
+
+    <h1>Let's Work Together</h1>
+
+    <div class="contact-description">
+      I'm always open to discussing new opportunities, interesting projects, or just connecting with fellow data and marketing enthusiasts.
+    </div>
+
+    <div class="contact-links">
+      <a href="mailto:gbarahona1019@gmail.com" class="contact-link">
+        <i data-lucide="mail"></i>
+        gbarahona1019@gmail.com
+      </a>
+
+      <a href="https://linkedin.com/in/georgebarahona" class="contact-link" target="_blank">
+        <i data-lucide="linkedin"></i>
+        Connect on LinkedIn
+      </a>
+
+      <a href="assets/George_Barahona_Resume.pdf" class="contact-link" target="_blank">
+        <i data-lucide="file-text"></i>
+        Download Resume (PDF)
+      </a>
+    </div>
+
+    <div style="margin-top: 4rem; color: #737373; font-size: 0.875rem;">
+      Based in West Covina, California
+    </div>
+
+  </div>
+</div>
+```

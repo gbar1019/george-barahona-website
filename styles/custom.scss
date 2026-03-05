@@ -1,0 +1,1145 @@
+/*-- scss:defaults --*/
+
+@import "variables";
+
+$body-bg: #0A0A0A;
+$body-color: #FFFFFF;
+$font-family-sans-serif: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+$font-family-monospace: 'JetBrains Mono', 'Fira Code', monospace;
+$link-color: #00D4AA;
+
+/*-- scss:rules --*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $bg-primary !important;
+  color: $text-primary !important;
+  font-family: $font-sans;
+  line-height: $leading-relaxed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+// Kill Quarto's default content wrapper padding
+#quarto-content {
+  padding: 0 !important;
+}
+
+.page-layout-custom .content {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+#quarto-content > * {
+  padding-top: 0 !important;
+}
+
+main.content {
+  padding: 0 !important;
+  margin: 0 !important;
+  max-width: 100% !important;
+}
+
+// Hide Quarto's auto-generated title
+.quarto-title-block,
+header#title-block-header {
+  display: none !important;
+}
+
+::selection {
+  background-color: rgba($accent-teal, 0.3);
+  color: $text-primary;
+}
+
+// ============================================
+// TYPOGRAPHY
+// ============================================
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $font-bold;
+  line-height: $leading-tight;
+  letter-spacing: -0.02em;
+  color: $text-primary;
+}
+
+h1 {
+  font-size: $text-4xl;
+  margin-bottom: $space-8;
+  
+  @media (min-width: $breakpoint-lg) {
+    font-size: $text-5xl;
+  }
+}
+
+h2 {
+  font-size: $text-2xl;
+  @media (min-width: $breakpoint-lg) {
+    font-size: $text-3xl;
+  }
+}
+
+h3 {
+  font-size: $text-xl;
+  margin-bottom: $space-2;
+}
+
+h4 {
+  font-weight: $font-normal;
+  font-size: $text-base;
+  color: $text-secondary;
+}
+
+p {
+  color: $text-secondary;
+  font-size: $text-base;
+  line-height: $leading-relaxed;
+}
+
+a {
+  color: $accent-teal;
+  text-decoration: none;
+  transition: color $transition-base;
+  
+  &:hover {
+    color: $accent-teal-light;
+  }
+}
+
+strong {
+  color: $text-primary;
+}
+
+// ============================================
+// LAYOUT
+// ============================================
+
+.container {
+  width: 100%;
+  max-width: $container-max;
+  margin: 0 auto;
+  padding: 0 $container-padding;
+}
+
+.section {
+  padding: $space-20 0;
+  
+  @media (min-width: $breakpoint-lg) {
+    padding: $space-24 0;
+  }
+}
+
+.section-title {
+  font-size: $text-sm !important;
+  font-weight: $font-semibold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: $accent-teal;
+  margin-bottom: $space-4;
+  display: flex;
+  align-items: center;
+  gap: $space-3;
+  
+  &::before {
+    content: '';
+    width: 32px;
+    height: 2px;
+    background: $gradient-teal;
+  }
+}
+
+// ============================================
+// NAVBAR
+// ============================================
+
+.navbar {
+  background-color: rgba($bg-primary, 0.92) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid $bg-tertiary !important;
+  padding: $space-3 0;
+  
+  .navbar-brand {
+    font-weight: $font-bold !important;
+    font-size: $text-lg !important;
+    color: $text-primary !important;
+    letter-spacing: -0.02em;
+    
+    &:hover {
+      color: $accent-teal !important;
+    }
+  }
+  
+  .nav-link {
+    color: $text-secondary !important;
+    font-weight: $font-medium;
+    font-size: $text-sm;
+    padding: $space-2 $space-4 !important;
+    border-radius: $radius-md;
+    transition: all $transition-base;
+    
+    &:hover,
+    &.active {
+      color: $text-primary !important;
+      background-color: $bg-secondary;
+    }
+  }
+  
+  .navbar-toggler {
+    border-color: $bg-tertiary !important;
+  }
+}
+
+// Resume button in navbar
+.navbar .nav-link[href$="George_Barahona_Resume.pdf"] {
+  padding: $space-2 $space-5 !important;
+  border: 1px solid rgba($accent-teal, 0.5);
+  border-radius: $radius-full;
+  color: $accent-teal !important;
+  font-weight: $font-semibold;
+  transition: all $transition-base;
+  
+  &:hover {
+    background-color: $accent-teal;
+    color: $bg-primary !important;
+    border-color: $accent-teal;
+    transform: translateY(-1px);
+  }
+}
+
+// ============================================
+// HERO
+// ============================================
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 120px $container-padding 80px;
+  background: $bg-primary;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: $gradient-hero;
+    pointer-events: none;
+  }
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 800px;
+  position: relative;
+  z-index: 1;
+
+  &.hero-two-col {
+    max-width: $container-max;
+  }
+}
+
+.hero-greeting {
+  font-size: $text-lg;
+  color: $text-tertiary;
+  font-weight: $font-medium;
+  margin-bottom: $space-3;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.hero-name {
+  font-size: $text-5xl;
+  font-weight: $font-bold;
+  line-height: $leading-none;
+  margin-bottom: $space-6;
+  color: $text-primary;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease 0.15s forwards;
+  
+  @media (min-width: $breakpoint-lg) {
+    font-size: $text-7xl;
+  }
+}
+
+.hero-title {
+  font-size: $text-xl;
+  color: $text-secondary;
+  font-weight: $font-normal;
+  margin-bottom: $space-8;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease 0.3s forwards;
+  
+  @media (min-width: $breakpoint-lg) {
+    font-size: $text-2xl;
+  }
+}
+
+.hero-description {
+  font-size: $text-base;
+  color: $text-tertiary;
+  max-width: 620px;
+  margin: 0 auto $space-10;
+  line-height: $leading-relaxed;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease 0.45s forwards;
+  
+  strong {
+    color: $text-primary;
+  }
+}
+
+.hero-cta {
+  display: flex;
+  gap: $space-4;
+  justify-content: center;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease 0.6s forwards;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: $space-10;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $space-2;
+  color: $text-muted;
+  font-size: $text-xs;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  opacity: 0;
+  animation: fadeIn 1s ease 1.2s forwards;
+  
+  .scroll-arrow {
+    width: 20px;
+    height: 20px;
+    animation: bounce 2s infinite;
+  }
+}
+
+// ============================================
+// BUTTONS
+// ============================================
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: $space-2;
+  padding: $space-3 $space-8;
+  font-size: $text-sm;
+  font-weight: $font-semibold;
+  border-radius: $radius-md;
+  transition: all $transition-base;
+  cursor: pointer;
+  border: none;
+  text-decoration: none !important;
+  
+  &-primary {
+    background-color: $accent-teal;
+    color: $bg-primary !important;
+    
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: $shadow-glow;
+      color: $bg-primary !important;
+    }
+  }
+  
+  &-secondary {
+    background-color: transparent;
+    color: $text-primary !important;
+    border: 1px solid $bg-tertiary;
+    
+    &:hover {
+      border-color: $accent-teal;
+      color: $accent-teal !important;
+      background-color: rgba($accent-teal, 0.05);
+    }
+  }
+}
+
+// ============================================
+// CARDS
+// ============================================
+
+.card {
+  background-color: $bg-secondary !important;
+  border: 1px solid $bg-tertiary !important;
+  border-radius: $radius-lg;
+  padding: $space-8;
+  transition: all $transition-slow;
+  color: $text-primary;
+  
+  &:hover {
+    border-color: rgba($accent-teal, 0.2) !important;
+    transform: translateY(-4px);
+    box-shadow: $shadow-lg;
+  }
+  
+  h3 {
+    color: $text-primary;
+    margin-bottom: $space-1;
+  }
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: $space-4;
+  flex-wrap: wrap;
+  gap: $space-2;
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+.card-subtitle {
+  font-size: $text-sm;
+  color: $accent-teal;
+  font-weight: $font-medium;
+  margin-bottom: $space-2;
+}
+
+.card-meta {
+  font-size: $text-sm;
+  color: $text-muted;
+  font-family: $font-mono;
+  white-space: nowrap;
+}
+
+.card-location {
+  display: flex;
+  align-items: center;
+  gap: $space-2;
+  font-size: $text-sm;
+  color: $text-tertiary;
+  margin-top: $space-1;
+}
+
+.card-body {
+  color: $text-secondary;
+  font-size: $text-base;
+  line-height: $leading-relaxed;
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    li {
+      position: relative;
+      padding-left: $space-5;
+      margin-bottom: $space-3;
+      
+      &::before {
+        content: '›';
+        position: absolute;
+        left: 0;
+        color: $accent-teal;
+        font-weight: $font-bold;
+        font-size: $text-lg;
+      }
+    }
+  }
+  
+  .impact {
+    margin-top: $space-4;
+    padding-top: $space-4;
+    border-top: 1px solid $bg-tertiary;
+    font-size: $text-sm;
+    color: $text-tertiary;
+  }
+}
+
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-2;
+  margin-top: $space-6;
+}
+
+// ============================================
+// TAGS
+// ============================================
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: $space-1 $space-3;
+  background-color: $bg-tertiary;
+  color: $text-secondary;
+  font-size: $text-xs;
+  font-weight: $font-medium;
+  letter-spacing: 0.03em;
+  border-radius: $radius-full;
+  border: 1px solid transparent;
+  transition: all $transition-base;
+  
+  &:hover {
+    border-color: rgba($accent-teal, 0.4);
+    color: $accent-teal;
+  }
+  
+  &.tag-highlight {
+    background-color: rgba($accent-teal, 0.1);
+    color: $accent-teal;
+    border-color: rgba($accent-teal, 0.2);
+  }
+}
+
+.language-tag {
+  font-size: $text-base !important;
+  padding: $space-3 $space-5 !important;
+}
+
+// ============================================
+// TIMELINE
+// ============================================
+
+.timeline {
+  position: relative;
+  padding-left: $space-10;
+  margin-top: $space-12;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 8px;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, $accent-teal, rgba($accent-teal, 0.1), transparent);
+  }
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: $space-10;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    left: calc(-#{$space-10} + 0px);
+    top: 12px;
+    width: 10px;
+    height: 10px;
+    background-color: $bg-primary;
+    border: 2px solid $accent-teal;
+    border-radius: $radius-full;
+    transition: all $transition-base;
+    z-index: 1;
+  }
+  
+  &:hover::before {
+    background-color: $accent-teal;
+    box-shadow: $shadow-glow;
+  }
+  
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+// ============================================
+// ACHIEVEMENTS GRID
+// ============================================
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-6;
+  margin-top: $space-10;
+  
+  @media (min-width: $breakpoint-md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.achievement-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.achievement-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: $radius-md;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: $space-4;
+  
+  i, svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+// ============================================
+// ABOUT GRID (index.qmd)
+// ============================================
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-4;
+  margin-top: $space-6;
+  
+  @media (min-width: $breakpoint-md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.about-card {
+  background-color: $bg-secondary;
+  border: 1px solid $bg-tertiary;
+  border-radius: $radius-lg;
+  padding: $space-6;
+  transition: all $transition-base;
+  
+  &:hover {
+    border-color: rgba($accent-teal, 0.2);
+  }
+  
+  h4 {
+    color: $text-primary;
+    font-weight: $font-semibold;
+    font-size: $text-base;
+    margin-bottom: $space-2;
+  }
+  
+  p {
+    color: $text-tertiary;
+    font-size: $text-sm;
+    margin: 0;
+  }
+}
+
+.about-card-icon {
+  width: 40px;
+  height: 40px;
+  background: rgba($accent-teal, 0.1);
+  border-radius: $radius-md;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: $space-3;
+  
+  i, svg {
+    width: 20px;
+    height: 20px;
+    color: $accent-teal;
+  }
+}
+
+// ============================================
+// SKILLS GRID
+// ============================================
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-10;
+  margin-top: $space-10;
+  
+  @media (min-width: $breakpoint-lg) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.skill-category {
+  .skill-title {
+    font-size: $text-lg;
+    font-weight: $font-semibold;
+    color: $text-primary;
+    margin-bottom: $space-6;
+    display: flex;
+    align-items: center;
+    gap: $space-3;
+    
+    i, svg {
+      color: $accent-teal;
+      width: 22px;
+      height: 22px;
+    }
+  }
+  
+  .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $space-3;
+  }
+}
+
+// ============================================
+// PASSIONS
+// ============================================
+
+.passion-card {
+  background: $bg-secondary;
+  border: 1px solid $bg-tertiary;
+  border-radius: $radius-xl;
+  padding: $space-10;
+  margin-top: $space-8;
+  position: relative;
+  overflow: hidden;
+  transition: all $transition-slow;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: $gradient-teal;
+    opacity: 0;
+    transition: opacity $transition-base;
+  }
+  
+  &:hover {
+    border-color: rgba($accent-teal, 0.2);
+    
+    &::before {
+      opacity: 1;
+    }
+  }
+  
+  h2 {
+    margin-bottom: $space-3;
+  }
+  
+  > p {
+    margin-bottom: $space-4;
+  }
+}
+
+.passion-icon {
+  width: 56px;
+  height: 56px;
+  background-color: rgba($accent-teal, 0.1);
+  border-radius: $radius-lg;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: $space-6;
+  
+  i, svg {
+    width: 28px;
+    height: 28px;
+    color: $accent-teal;
+  }
+}
+
+.passion-description {
+  font-size: $text-base;
+  color: $text-tertiary;
+  line-height: $leading-relaxed;
+  padding-top: $space-4;
+  border-top: 1px solid $bg-tertiary;
+  
+  strong {
+    color: $text-primary;
+  }
+}
+
+// ============================================
+// CONTACT
+// ============================================
+
+.contact-section {
+  text-align: center;
+  padding: $space-24 $container-padding;
+  
+  h1 {
+    margin-bottom: $space-4;
+  }
+}
+
+.contact-description {
+  font-size: $text-lg;
+  color: $text-secondary;
+  max-width: 500px;
+  margin: 0 auto $space-10;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: $space-4;
+  flex-wrap: wrap;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: $space-3;
+  padding: $space-4 $space-6;
+  background-color: $bg-secondary;
+  border: 1px solid $bg-tertiary;
+  border-radius: $radius-lg;
+  color: $text-primary !important;
+  font-weight: $font-medium;
+  font-size: $text-sm;
+  transition: all $transition-base;
+  text-decoration: none !important;
+  
+  &:hover {
+    border-color: rgba($accent-teal, 0.4);
+    color: $accent-teal !important;
+    transform: translateY(-2px);
+  }
+  
+  i, svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+// ============================================
+// FOOTER
+// ============================================
+
+.nav-footer {
+  background-color: $bg-primary !important;
+  border-top: 1px solid $bg-tertiary !important;
+  padding: $space-6 0;
+  
+  p, span, a {
+    font-size: $text-sm;
+  }
+  
+  a {
+    color: $text-tertiary !important;
+    
+    &:hover {
+      color: $accent-teal !important;
+    }
+  }
+}
+
+// ============================================
+// ANIMATIONS
+// ============================================
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-8px);
+  }
+  60% {
+    transform: translateY(-4px);
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  
+  &.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// ============================================
+// RESPONSIVE
+// ============================================
+
+@media (max-width: $breakpoint-md) {
+  .hero {
+    padding: 100px $container-padding 60px;
+    min-height: auto;
+  }
+  
+  .hero-name {
+    font-size: $text-4xl !important;
+  }
+  
+  .hero-title {
+    font-size: $text-lg !important;
+  }
+  
+  .section {
+    padding: $space-16 0;
+  }
+  
+  .card {
+    padding: $space-6;
+  }
+  
+  .timeline {
+    padding-left: $space-8;
+  }
+  
+  .passion-card {
+    padding: $space-6;
+  }
+  
+  .contact-link {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .scroll-indicator {
+    display: none;
+  }
+}
+
+// ============================================
+// HERO TWO-COLUMN LAYOUT (Change 1)
+// ============================================
+
+.hero-two-col {
+  display: flex;
+  align-items: center;
+  gap: $space-12;
+  max-width: $container-max;
+  width: 100%;
+  text-align: left;
+
+  @media (max-width: $breakpoint-md) {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: $space-8;
+  }
+}
+
+.hero-text {
+  flex: 0 0 60%;
+
+  .hero-cta {
+    justify-content: flex-start;
+
+    @media (max-width: $breakpoint-md) {
+      justify-content: center;
+    }
+  }
+
+  .hero-description {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.hero-headshot {
+  flex: 0 0 35%;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease 0.75s forwards;
+
+  @media (max-width: $breakpoint-md) {
+    flex: none;
+    width: 200px;
+  }
+}
+
+.headshot-img {
+  width: 280px;
+  height: 280px;
+  border-radius: $radius-full;
+  object-fit: cover;
+  border: 3px solid rgba($accent-teal, 0.3);
+  box-shadow: $shadow-glow;
+  transition: all $transition-slow;
+
+  &:hover {
+    border-color: rgba($accent-teal, 0.6);
+    box-shadow: $shadow-glow-lg;
+    transform: scale(1.03);
+  }
+
+  @media (max-width: $breakpoint-md) {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+// ============================================
+// PROFICIENCY BADGES (Change 5)
+// ============================================
+
+.badge {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: $radius-full;
+  margin-left: $space-2;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+
+.badge-expert {
+  background-color: $accent-teal;
+  box-shadow: 0 0 6px rgba($accent-teal, 0.4);
+}
+
+.badge-proficient {
+  background-color: transparent;
+  border: 2px solid $accent-teal;
+}
+
+.badge-familiar {
+  background-color: transparent;
+  border: 2px solid $text-muted;
+}
+
+.proficiency-legend {
+  display: flex;
+  gap: $space-6;
+  margin-top: $space-4;
+  margin-bottom: $space-2;
+  flex-wrap: wrap;
+
+  .legend-item {
+    display: inline-flex;
+    align-items: center;
+    gap: $space-2;
+    font-size: $text-sm;
+    color: $text-tertiary;
+  }
+
+  .badge {
+    margin-left: 0;
+  }
+}
+
+// ============================================
+// QUARTO LISTING OVERRIDES (dark theme)
+// ============================================
+
+// Grid listing (Projects)
+.quarto-listing {
+  .card {
+    background-color: $bg-secondary !important;
+    border: 1px solid $bg-tertiary !important;
+    color: $text-primary !important;
+
+    &:hover {
+      border-color: rgba($accent-teal, 0.3) !important;
+    }
+
+    .card-title a,
+    .listing-title a {
+      color: $text-primary !important;
+      text-decoration: none !important;
+
+      &:hover {
+        color: $accent-teal !important;
+      }
+    }
+
+    .card-text,
+    .listing-description {
+      color: $text-secondary !important;
+    }
+  }
+
+  .listing-category {
+    .listing-category-item {
+      background-color: rgba($accent-teal, 0.1) !important;
+      color: $accent-teal !important;
+      border: 1px solid rgba($accent-teal, 0.2) !important;
+      border-radius: $radius-full !important;
+      font-size: $text-xs !important;
+    }
+  }
+}
+
+// Default listing (Blog)
+.quarto-listing-default {
+  .list-group-item {
+    background-color: $bg-secondary !important;
+    border: 1px solid $bg-tertiary !important;
+    border-radius: $radius-lg !important;
+    margin-bottom: $space-4 !important;
+    padding: $space-6 !important;
+    transition: all $transition-base;
+
+    &:hover {
+      border-color: rgba($accent-teal, 0.3) !important;
+    }
+  }
+
+  .listing-title {
+    color: $text-primary !important;
+  }
+
+  .listing-description {
+    color: $text-secondary !important;
+  }
+
+  .listing-date {
+    color: $text-muted !important;
+    font-family: $font-mono;
+    font-size: $text-sm;
+  }
+
+  .listing-categories .listing-category {
+    background-color: rgba($accent-teal, 0.1) !important;
+    color: $accent-teal !important;
+    border-radius: $radius-full !important;
+    font-size: $text-xs !important;
+    padding: 2px 10px !important;
+  }
+}
+
+// Quarto category sidebar
+#quarto-margin-sidebar .quarto-listing-category {
+  .category {
+    color: $text-secondary !important;
+
+    &:hover, &.active {
+      color: $accent-teal !important;
+    }
+  }
+}
+
+// ============================================
+// PRINT
+// ============================================
+
+@media print {
+  .navbar, .scroll-indicator, .hero-cta, .nav-footer {
+    display: none !important;
+  }
+  
+  body {
+    background: white !important;
+    color: black !important;
+  }
+}

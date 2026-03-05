@@ -1,0 +1,96 @@
+---
+pagetitle: "Achievements | George Barahona"
+page-layout: custom
+---
+
+```{=html}
+<div class="section">
+  <div class="container">
+
+    <div class="section-title">Featured Work</div>
+
+    <h1>Key Achievements</h1>
+
+    <div class="achievements-grid">
+
+      <div class="card achievement-card" style="border-top: 4px solid #00D4AA;">
+        <div class="achievement-icon" style="background: rgba(0,212,170,0.1);">
+          <i data-lucide="layout-dashboard" style="color:#00D4AA;"></i>
+        </div>
+        <h3>Membership PowerBI Dashboard</h3>
+        <div class="card-subtitle">Data Visualization &amp; Analytics</div>
+        <div class="card-body">
+          <p>Pull together data from various sources to build a dashboard that contains all of SEMA memberships data in one place, allowing interactive visualizations for leadership to make data driven decisions.</p>
+          <!-- TODO: add metric -->
+          <p class="impact"><strong>Impact:</strong> Centralized membership analytics from [X] data sources, reducing reporting time by [X]% and enabling real-time strategic decisions</p>
+        </div>
+        <div class="card-tags">
+          <span class="tag tag-highlight">PowerBI</span>
+          <span class="tag">Data Integration</span>
+          <span class="tag">Dashboard Design</span>
+          <span class="tag">Executive Reporting</span>
+        </div>
+      </div>
+
+      <!-- Change 6: Fixed icon color from #FFB800 (orange) to teal (#00D4AA) -->
+      <div class="card achievement-card" style="border-top: 4px solid #00D4AA;">
+        <div class="achievement-icon" style="background: rgba(0,212,170,0.1);">
+          <i data-lucide="rocket" style="color:#00D4AA;"></i>
+        </div>
+        <h3>SEMA+ Program</h3>
+        <div class="card-subtitle">Product Launch &amp; B2C Strategy</div>
+        <div class="card-body">
+          <p>Launch SEMA+, a B2C product that caters to automotive enthusiasts, generating additional revenue, advocacy awareness, and community.</p>
+          <!-- TODO: add metric -->
+          <p class="impact"><strong>Impact:</strong> Generated $[X] in new revenue / Added [X] new members to SEMA+ program</p>
+        </div>
+        <div class="card-tags">
+          <span class="tag tag-highlight">Product Launch</span>
+          <span class="tag">B2C</span>
+          <span class="tag">Revenue Growth</span>
+          <span class="tag">Community Building</span>
+        </div>
+      </div>
+
+      <div class="card achievement-card" style="border-top: 4px solid #00D4AA;">
+        <div class="achievement-icon" style="background: rgba(0,212,170,0.1);">
+          <i data-lucide="brain" style="color:#00D4AA;"></i>
+        </div>
+        <h3>AI Lead Database</h3>
+        <div class="card-subtitle">AI-Powered Prospecting</div>
+        <div class="card-body">
+          <p>Utilized AI to build a database of influencers, car clubs, and nonmember companies to expand SEMA marketing outreach efforts.</p>
+          <!-- TODO: add metric -->
+          <p class="impact"><strong>Impact:</strong> Built AI database of [X] contacts, expanding outreach capacity by [X]%</p>
+        </div>
+        <div class="card-tags">
+          <span class="tag tag-highlight">AI Tools</span>
+          <span class="tag">Lead Generation</span>
+          <span class="tag">Database Building</span>
+          <span class="tag">Influencer Marketing</span>
+        </div>
+      </div>
+
+      <div class="card achievement-card" style="border-top: 4px solid #00D4AA;">
+        <div class="achievement-icon" style="background: rgba(0,212,170,0.1);">
+          <i data-lucide="graduation-cap" style="color:#00D4AA;"></i>
+        </div>
+        <h3>Benefit Learning Challenge</h3>
+        <div class="card-subtitle">L&amp;D Program Development</div>
+        <div class="card-body">
+          <p>Developed an internal learning challenge with Panda Restaurant Group benefits to boost benefit utilization and continuous learning for all organization associates.</p>
+          <!-- TODO: add metric -->
+          <p class="impact"><strong>Impact:</strong> Increased benefit utilization by [X]% across [X] associates</p>
+        </div>
+        <div class="card-tags">
+          <span class="tag tag-highlight">LMS</span>
+          <span class="tag">Program Design</span>
+          <span class="tag">Employee Engagement</span>
+          <span class="tag">Benefits</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+```

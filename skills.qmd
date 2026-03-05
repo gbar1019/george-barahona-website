@@ -1,0 +1,97 @@
+---
+pagetitle: "Skills | George Barahona"
+page-layout: custom
+---
+
+```{=html}
+<div class="section">
+  <div class="container">
+
+    <div class="section-title">Capabilities</div>
+
+    <h1>Technical &amp; Soft Skills</h1>
+
+    <!-- Proficiency Legend -->
+    <div class="proficiency-legend">
+      <span class="legend-item"><span class="badge badge-expert"></span> Expert</span>
+      <span class="legend-item"><span class="badge badge-proficient"></span> Proficient</span>
+      <span class="legend-item"><span class="badge badge-familiar"></span> Familiar</span>
+    </div>
+
+    <div class="skills-grid">
+
+      <!-- Analytics & BI -->
+      <div class="skill-category">
+        <div class="skill-title">
+          <i data-lucide="bar-chart-2"></i>
+          Analytics &amp; BI
+        </div>
+        <div class="skill-list">
+          <span class="tag tag-highlight">PowerBI <span class="badge badge-expert"></span></span>
+          <span class="tag tag-highlight">RStudio <span class="badge badge-expert"></span></span>
+          <span class="tag">Google Analytics <span class="badge badge-proficient"></span></span>
+        </div>
+      </div>
+
+      <!-- Marketing Tools -->
+      <div class="skill-category">
+        <div class="skill-title">
+          <i data-lucide="megaphone"></i>
+          Marketing Tools
+        </div>
+        <div class="skill-list">
+          <span class="tag">Meta Ads Manager <span class="badge badge-proficient"></span></span>
+          <span class="tag">SurveyMonkey <span class="badge badge-proficient"></span></span>
+          <span class="tag">Netforum <span class="badge badge-proficient"></span></span>
+          <span class="tag">Monday.com <span class="badge badge-proficient"></span></span>
+        </div>
+      </div>
+
+      <!-- AI & Automation -->
+      <div class="skill-category">
+        <div class="skill-title">
+          <i data-lucide="bot"></i>
+          AI &amp; Automation
+        </div>
+        <div class="skill-list">
+          <span class="tag tag-highlight">Nibble <span class="badge badge-expert"></span></span>
+          <span class="tag">A/B Testing <span class="badge badge-proficient"></span></span>
+          <span class="tag">Microsoft Office <span class="badge badge-proficient"></span></span>
+        </div>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="skill-category">
+        <div class="skill-title">
+          <i data-lucide="users"></i>
+          Soft Skills
+        </div>
+        <div class="skill-list">
+          <span class="tag tag-highlight">AI Workflow Automation <span class="badge badge-expert"></span></span>
+          <span class="tag tag-highlight">Prompt Engineering <span class="badge badge-expert"></span></span>
+          <span class="tag tag-highlight">Data Analysis <span class="badge badge-expert"></span></span>
+          <span class="tag">Problem Solving <span class="badge badge-proficient"></span></span>
+          <span class="tag">Project Coordination <span class="badge badge-proficient"></span></span>
+          <span class="tag">Curiosity &amp; Continuous Learning <span class="badge badge-proficient"></span></span>
+        </div>
+      </div>
+
+    </div>
+
+    <hr style="border-color: #1A1A1A; margin: 3rem 0;">
+
+    <h2>Languages</h2>
+
+    <div class="skill-list" style="margin-top: 1.5rem;">
+      <span class="tag language-tag">
+        <strong>English</strong>&ensp;— Native <span class="badge badge-expert"></span>
+      </span>
+      <span class="tag language-tag">
+        <strong>Spanish</strong>&ensp;— Fluent <span class="badge badge-proficient"></span>
+      </span>
+    </div>
+
+    </div>
+  </div>
+</div>
+```
