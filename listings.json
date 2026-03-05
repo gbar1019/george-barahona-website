@@ -1,0 +1,15 @@
+[
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/posts/first-post.html"
+    ]
+  },
+  {
+    "listing": "/projects.html",
+    "items": [
+      "/projects/r-analysis-template.html",
+      "/projects/ai-lead-database.html"
+    ]
+  }
+]

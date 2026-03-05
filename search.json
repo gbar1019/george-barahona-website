@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "posts/first-post.html#video-walkthrough",
+    "href": "posts/first-post.html#video-walkthrough",
+    "title": "Building My Portfolio with RStudio & Quarto",
+    "section": "Video Walkthrough",
+    "text": "Video Walkthrough"
+  },
+  {
+    "objectID": "posts/first-post.html#summary",
+    "href": "posts/first-post.html#summary",
+    "title": "Building My Portfolio with RStudio & Quarto",
+    "section": "Summary",
+    "text": "Summary\nIn this post I walk through how I built my personal portfolio website using RStudio + Quarto. The entire process was done through vibe coding — iterating quickly, testing ideas in real time, and leveraging AI tools to speed up development.\n\nWhat I Covered\n\nSetting up a Quarto website project in RStudio\nCreating a dark theme with custom SCSS variables\nBuilding responsive card layouts for experience and achievements\nAdding scroll animations with vanilla JavaScript\nDeploying to GitHub Pages\n\n\n\nKey Takeaways\nVibe coding isn’t about writing perfect code on the first try — it’s about rapid iteration and learning by building. This portfolio went through several design passes before landing on the current dark minimal aesthetic.\nStay tuned for more posts on AI workflow automation and data visualization techniques."
+  }
+]
