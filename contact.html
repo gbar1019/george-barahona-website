@@ -80,23 +80,11 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./experience.html"> 
-<span class="menu-text">Experience</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./achievements.html"> 
-<span class="menu-text">Achievements</span></a>
+<span class="menu-text">Career</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./projects.html"> 
 <span class="menu-text">Projects</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./skills.html"> 
-<span class="menu-text">Skills</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./passions.html"> 
-<span class="menu-text">Passions</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./blog.html"> 
@@ -109,7 +97,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://linkedin.com/in/georgebarahona" target="_blank"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
+    <a class="nav-link" href="https://www.linkedin.com/in/george--barahona" target="_blank"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -119,7 +107,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./assets/George_Barahona_Resume.pdf" target="_blank"> 
+    <a class="nav-link" href="./#"> 
 <span class="menu-text">Resume</span></a>
   </li>  
 </ul>
@@ -155,14 +143,14 @@ ul.task-list li input[type="checkbox"] {
         gbarahona1019@gmail.com
       </a>
 
-      <a href="https://linkedin.com/in/georgebarahona" class="contact-link" target="_blank">
+      <a href="https://www.linkedin.com/in/george--barahona" class="contact-link" target="_blank">
         <i data-lucide="linkedin"></i>
         Connect on LinkedIn
       </a>
 
-      <a href="assets/George_Barahona_Resume.pdf" class="contact-link" target="_blank">
+      <a href="#" class="contact-link resume-trigger">
         <i data-lucide="file-text"></i>
-        Download Resume (PDF)
+        View Resume (PDF)
       </a>
     </div>
 
@@ -605,7 +593,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
-    <a class="nav-link" href="https://linkedin.com/in/georgebarahona">
+    <a class="nav-link" href="https://www.linkedin.com/in/george--barahona">
       <i class="bi bi-linkedin" role="img">
 </i> 
     </a>
@@ -620,6 +608,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
+<!-- Resume Modal -->
+<div id="resume-modal" class="resume-modal-overlay" style="display:none;">
+  <div class="resume-modal-content">
+    <button id="resume-modal-close" class="resume-modal-close">×</button>
+    <iframe src="assets/George_Barahona_Resume.pdf" class="resume-modal-iframe"></iframe>
+  </div>
+</div>
 <script src="js/animations.js"></script>
 
 

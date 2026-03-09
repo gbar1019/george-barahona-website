@@ -25,8 +25,6 @@ ul.task-list li input[type="checkbox"] {
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <link href="./favicon.ico" rel="icon">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -52,69 +50,11 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-date','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
 <script src="https://unpkg.com/lucide@latest"></script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -140,23 +80,11 @@ window.Quarto = {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./experience.html"> 
-<span class="menu-text">Experience</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./achievements.html"> 
-<span class="menu-text">Achievements</span></a>
+<span class="menu-text">Career</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./projects.html"> 
 <span class="menu-text">Projects</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./skills.html"> 
-<span class="menu-text">Skills</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./passions.html"> 
-<span class="menu-text">Passions</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./blog.html" aria-current="page"> 
@@ -169,7 +97,7 @@ window.Quarto = {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://linkedin.com/in/georgebarahona" target="_blank"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
+    <a class="nav-link" href="https://www.linkedin.com/in/george--barahona" target="_blank"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -179,7 +107,7 @@ window.Quarto = {
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./assets/George_Barahona_Resume.pdf" target="_blank"> 
+    <a class="nav-link" href="./#"> 
 <span class="menu-text">Resume</span></a>
   </li>  
 </ul>
@@ -198,16 +126,17 @@ window.Quarto = {
 
 
 
-<div class="section">
-  <div class="container">
-    <div class="section-title">Writing &amp; Videos</div>
-    <h1>Blog</h1>
-    <p style="margin-top: 1rem; margin-bottom: 2rem; max-width: 700px;">
-      Vibe coding sessions, technique walkthroughs, and thoughts on marketing technology and AI workflows.
+<div class="section" style="min-height: 60vh; display: flex; align-items: center;">
+  <div class="container" style="text-align: center;">
+    <div style="margin-bottom: 2rem;">
+      <i data-lucide="pen-tool" style="width:64px;height:64px;color:#00D4AA;"></i>
+    </div>
+    <h1>Work in Progress</h1>
+    <p style="max-width: 500px; margin: 1.5rem auto 0; font-size: 1.125rem;">
+      Blog posts, vibe coding videos, and technique walkthroughs coming soon.
     </p>
   </div>
 </div>
-
 
 
 
@@ -629,44 +558,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="dmliZS1jb2RpbmclMkNyJTJDYWktdG9vbHM=" data-listing-date-sort="1736928000000" data-listing-file-modified-sort="1772728211346" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="162">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/first-post.html" class="no-external">Building My Portfolio with RStudio &amp; Quarto</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/first-post.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('dmliZS1jb2Rpbmc='); return false;">
-vibe-coding
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('cg=='); return false;">
-r
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('YWktdG9vbHM='); return false;">
-ai-tools
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/first-post.html" class="no-external">A walkthrough of how I built this portfolio site using vibe coding techniques with RStudio and Quarto — from concept to deployment.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/first-post.html" class="no-external">
-<div class="listing-date">
-Jan 15, 2025
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></div> <!-- /content -->
+</div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
@@ -678,7 +570,7 @@ No matching items
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
-    <a class="nav-link" href="https://linkedin.com/in/georgebarahona">
+    <a class="nav-link" href="https://www.linkedin.com/in/george--barahona">
       <i class="bi bi-linkedin" role="img">
 </i> 
     </a>
@@ -693,6 +585,13 @@ No matching items
     </div>
   </div>
 </footer>
+<!-- Resume Modal -->
+<div id="resume-modal" class="resume-modal-overlay" style="display:none;">
+  <div class="resume-modal-content">
+    <button id="resume-modal-close" class="resume-modal-close">×</button>
+    <iframe src="assets/George_Barahona_Resume.pdf" class="resume-modal-iframe"></iframe>
+  </div>
+</div>
 <script src="js/animations.js"></script>
 
 
